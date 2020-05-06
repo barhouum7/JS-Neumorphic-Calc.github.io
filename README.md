@@ -9,8 +9,8 @@ I'm going to build a Neumorphic styled calculator. ( Neumorphism is a recent UI 
 ###### It’s designs appear to extrude from the background.
 ---
 #### Technologies used 👨‍💻
-- [x] HTML
-- [x] CSS
+- [x] HTML5
+- [x] CSS3
 - [x] JavaScript
 - [x] SASS
 - [x] NodeJs
