@@ -10,7 +10,6 @@ I'm going to build a Neumorphic styled calculator. ( Neumorphism is a recent UI 
 ---
 #### Technologies used 👨‍💻
 - [x] HTML5
-- [x] CSS3
+- [x] CSS3  <kbd>SASS</kbd>  <kbd>FlexBox</kbd>  <kbd>Grid</kbd>  <kbd>Variables</kbd>
 - [x] JavaScript
-- [x] SASS
 - [x] NodeJs
