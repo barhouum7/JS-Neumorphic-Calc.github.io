@@ -57,9 +57,31 @@ main {
     }
     .keys {
         display: grid;
-        
-        grid-template: repeat(4, 50px) / repeat(4, 1fr);
+        // grid-template: repeat(4, 50px) / repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0.8rem;
+        margin-top: 20px;
     }
 
+    button {
+        @include shadow;
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        background: #e9e9e9;
+
+        &:hover, &:active {
+            background-color: #ccc;
+        }
+        &:active {
+            @include shadow-inset;
+        }
+    }
+
+    .op__key, .eq__key {
+        color: #ff652f;
+    }
 
 }
