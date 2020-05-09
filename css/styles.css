@@ -10,8 +10,7 @@
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,8 +25,18 @@ body {
 main {
   -webkit-box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
           box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
+  height: 100%;
+  margin: 27px;
   padding: 2rem;
   border-radius: 30px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 80px auto;
+      grid-template-rows: 80px auto;
+      grid-template-areas: "i i i i i" "b b b b b" "b b b b b" "b b b b b" "b b b b b" "b b b b b";
 }
 
 main input,
@@ -48,8 +57,11 @@ main input[type="number"] {
 main input {
   -webkit-box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.4);
           box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.4);
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: i;
   width: 320px;
-  height: 60px;
   padding: 16px 32px;
   text-align: right;
   border: none;
@@ -58,6 +70,11 @@ main input {
 }
 
 main .keys {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: b;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -69,10 +86,11 @@ main .keys {
 main button {
   -webkit-box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
           box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: .5rem;
   border: none;
-  border-radius: 30px;
+  border-radius: 25px;
   cursor: pointer;
   background: #e9e9e9;
 }
@@ -84,6 +102,11 @@ main button:hover, main button:active {
 main button:active {
   -webkit-box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.4);
           box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.4);
+}
+
+main button:active, main button:focus {
+  outline: none;
+  outline-style: none;
 }
 
 main .op__key, main .eq__key {
