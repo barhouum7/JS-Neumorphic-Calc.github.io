@@ -32,7 +32,7 @@ main {
     padding: 2rem;
     border-radius: 30px;
     display: grid;
-    grid-gap: 3px;
+    // grid-gap: 3px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 80px auto;
     grid-template-areas: 
@@ -60,7 +60,7 @@ main {
     input {
         @include shadow-inset;
         grid-area: i;
-        width: 320px;
+        // width: 320px;
         // height: 20%;
         padding: 16px 32px;
         text-align: right;

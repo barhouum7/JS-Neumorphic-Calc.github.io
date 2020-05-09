@@ -31,7 +31,6 @@ main {
   border-radius: 30px;
   display: -ms-grid;
   display: grid;
-  grid-gap: 3px;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: 80px auto;
@@ -61,7 +60,6 @@ main input {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-area: i;
-  width: 320px;
   padding: 16px 32px;
   text-align: right;
   border: none;
