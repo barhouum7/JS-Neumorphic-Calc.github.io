@@ -65,3 +65,8 @@ document.querySelector(".eq__key").onclick = () => {
         input.value = evaluate(buffer);
     }
 }
+
+document.querySelector(".op__key[op=clear]").onclick = () => {
+    input.value = 0;
+    buffer.length = 0;
+}
