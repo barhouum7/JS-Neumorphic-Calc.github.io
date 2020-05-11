@@ -32,6 +32,29 @@ const opCallBack = opName => () => {
     }
 }
 
+const evaluate = buffer => {
+    const secondOperand = buffer.pop().value;
+    const operator = buffer.pop().value;
+    const firstOperand = buffer.pop().value;
+
+    switch (operator) {
+        case "add":
+            return firstOperand + secondOperand;
+            break;
+        case "subtract":
+            return firstOperand - secondOperand;
+            break;
+        case "multiply":
+            return firstOperand * secondOperand;
+            break;
+        case "devide":
+            return firstOperand / secondOperand;
+            break;
+        default:
+            return secondOperand;
+    }
+}
+
 for (const opName of ['add', 'subtract', 'multiply', 'devide', 'percent']) {
     document.querySelector(`.op__key[op=${opName}]`).onclick = opCallBack(opName);
 }
