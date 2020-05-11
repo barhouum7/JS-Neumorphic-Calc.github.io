@@ -15,7 +15,20 @@ const opCallBack = opName => () => {
         currentValue *= 0.01;
         input.value = currentValue;
     } else {
+        if (buffer && buffer.length) {
+            buffer.push({ value: currentValue });
 
+            const result = evaluate(buffer);
+
+            buffer.push({ value: result });
+            buffer.push({ value: opName });
+
+            input.value = "";
+        } else {
+            buffer.push({ value: currentValue });
+            buffer.push({ value: opName });
+            input.value = "";
+        }
     }
 }
 
