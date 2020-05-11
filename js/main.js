@@ -58,3 +58,10 @@ const evaluate = buffer => {
 for (const opName of ['add', 'subtract', 'multiply', 'devide', 'percent']) {
     document.querySelector(`.op__key[op=${opName}]`).onclick = opCallBack(opName);
 }
+
+document.querySelector(".eq__key").onclick = () => {
+    if (buffer && buffer.length) {
+        buffer.push({ value: parseFloat(input.value) });
+        input.value = evaluate(buffer);
+    }
+}
