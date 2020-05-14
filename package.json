@@ -1,0 +1,30 @@
+{
+  "name": "js-neumorphic-calc.github.io",
+  "version": "1.0.0",
+  "description": "A JavaScript Calculator Developed using Neumorphic Design",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "mySass": "node-sass -w sass/ -o dist/css/ --recusive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barhouum7/JS-Neumorphic-Calc.github.io.git"
+  },
+  "keywords": [
+    "Neumorphic",
+    "Design",
+    "JavaScript",
+    "Calculator",
+    "WebApp"
+  ],
+  "author": "BHMBS Ibrahim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barhouum7/JS-Neumorphic-Calc.github.io/issues"
+  },
+  "homepage": "https://github.com/barhouum7/JS-Neumorphic-Calc.github.io#readme"
+}
