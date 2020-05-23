@@ -1,7 +1,7 @@
 # JS-Neumorphic-Calc.github.io
 I'm going to build a Neumorphic styled calculator. ( Neumorphism is a recent UI design trend )
 # My Project Notes
-###### Click Here For Demo: https://barhouum7.github.io/JS-Neumorphic-Calc.github.io/
+###### Click Here For Demo -> https://barhouum7.github.io/JS-Neumorphic-Calc.github.io/
 ---
 #### Neumorphic Calculator
 ###### I developed this calculator using Neumorphic design.
