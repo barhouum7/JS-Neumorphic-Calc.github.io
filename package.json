@@ -4,7 +4,7 @@
   "description": "A JavaScript Calculator Developed using Neumorphic Design",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^7.0.0"
+    "node-sass": "^9.0.0"
   },
   "devDependencies": {},
   "scripts": {
